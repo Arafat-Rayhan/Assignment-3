@@ -4,7 +4,7 @@ function countHashtags(caption) {
     }else if(!caption.includes('#')){
         return {
         hashtagCount:0,
-        longestTag :"",
+        longestTag:"",
     }
     }
     let arrayOfCaption = caption.split(' ');
@@ -26,5 +26,5 @@ function countHashtags(caption) {
 
 
 
-// const caption ='sdffj fsdfj kjhfdg #jdkjl lkdjhf';
+// const caption ='sdffj fsdfj kjhfdg jdkjl lkdjhf';
 // console.log(countHashtags(caption));

@@ -3,17 +3,18 @@ function bonusScore(scores) {
         return `Invalid`
     }
     let allNumCake = scores.every(num => typeof num === 'number');
+    console.log(allNumCake);
     if(!allNumCake){
-        return `Invalid`
+        return "Invalid"
     }
     let sum = 0;
     let addAll = scores.map(num => {
-        sum += num;
+        sum += num + 10;
     });
     return sum;
 }
 
 
 
-let scores =[4,3]
+let scores =[3,3,3,3,3,3,3,3,3,3,]
 console.log(bonusScore(scores));
