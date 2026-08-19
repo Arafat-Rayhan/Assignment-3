@@ -1,12 +1,11 @@
 /* Find and fix every bug. Do not change the function name. */
 function generateLeaderboard(students) {
-    if (!Array.isArray(students)) {
+    
+    if (!Array.isArray(students) ||students.length === 0) {
         return "Invalid";
     }
 
-    if (students.length === 0) {
-        return "Invalid";
-    }
+    
     const isValid = students.every(student => typeof student.score === 'number');
     if (!isValid) {
         return "Invalid";
@@ -16,7 +15,7 @@ function generateLeaderboard(students) {
     const qualified = students.filter(student => {
         return student.score > 70;
     });
-
+    console.log(qualified);
     const names = qualified.map(({ name }) => {
         return name.toUpperCase();
         
@@ -26,15 +25,21 @@ function generateLeaderboard(students) {
     
 }
 
-const student = [
-    {name:"Sadia"}
 
+
+
+
+// const students = [
     
-]
-console.log(generateLeaderboard(student));
+//     {name:"Rafi",score:90},
+//     //{name:"Sadia",score:95},
+//     //{name:"Karim",score:85},
+//     //{name:"Nafis",score:75},
+//     //{name:"Najmu",score:45}
+    
+// ]
+// //generateLeaderboard(students)
+
+//console.log(generateLeaderboard({name:'rafi',score:'89'}));
 
 
-// {name:"Rafi",score:90},
-//     {name:"Sadia",score:65},
-//     {name:"Karim",score:85},
-//     {name:"Nafis",score:75}
