@@ -24,5 +24,6 @@ function countHashtags(caption) {
 
 
 
-// const caption ='sdffj fsdfj kjhfdg jdkjl lkdjhf';
-// console.log(countHashtags(caption));
+
+ //const caption ='sdffj fsdfj #kjhfdg jdkjl #lkdjhf';
+ //console.log(countHashtags(caption));

@@ -16,5 +16,5 @@ function bonusScore(scores) {
 
 
 
-let scores =[3,3,3,3,3,3,3,3,3,3,]
-console.log(bonusScore(scores));
+//let scores =[3,3,3,3,3,3,3,3,3,3,]
+//console.log(bonusScore(scores));
