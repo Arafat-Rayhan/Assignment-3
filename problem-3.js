@@ -10,10 +10,8 @@ function countHashtags(caption) {
     let arrayOfCaption = caption.split(' ');
     let filterOfHashTag = arrayOfCaption.filter(word => word.startsWith('#'));
     let totelHashCount = filterOfHashTag.length;
-    console.log(totelHashCount);
     let allHashtag = [...filterOfHashTag].sort((a,b) => b.length - a.length);
     let bigtag = allHashtag[0].slice(1);
-    console.log(bigtag);
     let result = {
         hashtagCount : totelHashCount,
         longestTag : bigtag,
