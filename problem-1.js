@@ -6,15 +6,15 @@ function studentIntroduction(student) {
      && student.hasOwnProperty('age')
      && student.hasOwnProperty('course')){
 
-    return `my name is ${student.name} . I am ${student.age} . I am learning ${student.course}`;
+    return `My name is ${student.name} . I am ${student.age} years old. I am learning ${student.course}`;
   }else{
     return`Invalid`;
   }
 }
 
 // const student ={
-//     // name :'Arafat Rayhan',
-//     // age : 21,
-//     // course:'javascript'
+//     name :'Rayhan',
+//     age : 21,
+//     course:'Node'
 // }
 // console.log(studentIntroduction(student));
